@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2048
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "007_Reverse Integer", "007_Reverse Integer\007_Reverse Integer.vcxproj", "{DCAEA5E6-CF24-47F9-A843-F639FB2B6820}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "007_Reverse Integer", "007_Reverse Integer.vcxproj", "{DCAEA5E6-CF24-47F9-A843-F639FB2B6820}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E027D914-49DB-4006-AF61-AF67258B3D06}
+		SolutionGuid = {59D9B41E-842E-4026-A2F4-3F18FB4AE42D}
 	EndGlobalSection
 EndGlobal
