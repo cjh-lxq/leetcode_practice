@@ -3,6 +3,6 @@ git remote -v
 git add -A
 git status
 git commit -m %filename%
-git push github computer_702
-git push origin computer_702
+git push github master
+git push origin master
 pause
