@@ -1,6 +1,8 @@
+set filename=%date:~0,4%-%date:~5,2%-%date:~8,2%%time:~0,2%:%time:~3,2%:%time:~6,2%
+echo %filename%
 git remote -v
 git add -A
 git status
-git commit -m "auto commit"
+git commit -m %filename%
 git push github computer_alienware
 pause
