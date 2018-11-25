@@ -5,4 +5,5 @@ git add -A
 git status
 git commit -m %filename%
 git push github computer_alienware
+git push orign computer_alienware
 pause
