@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "021_合并两个有序链表", "021_合并两个有序链表.vcxproj", "{A74B0B17-747E-424C-8307-1F23EC8E76A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A74B0B17-747E-424C-8307-1F23EC8E76A4}.Debug|x64.ActiveCfg = Debug|x64
+		{A74B0B17-747E-424C-8307-1F23EC8E76A4}.Debug|x64.Build.0 = Debug|x64
+		{A74B0B17-747E-424C-8307-1F23EC8E76A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{A74B0B17-747E-424C-8307-1F23EC8E76A4}.Debug|x86.Build.0 = Debug|Win32
+		{A74B0B17-747E-424C-8307-1F23EC8E76A4}.Release|x64.ActiveCfg = Release|x64
+		{A74B0B17-747E-424C-8307-1F23EC8E76A4}.Release|x64.Build.0 = Release|x64
+		{A74B0B17-747E-424C-8307-1F23EC8E76A4}.Release|x86.ActiveCfg = Release|Win32
+		{A74B0B17-747E-424C-8307-1F23EC8E76A4}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49DB2F8F-00C4-4EA1-92E6-2ED2714AAB8B}
+	EndGlobalSection
+EndGlobal
