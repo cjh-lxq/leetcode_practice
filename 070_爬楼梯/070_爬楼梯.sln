@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "070_爬楼梯", "070_爬楼梯.vcxproj", "{BF033579-B728-4148-8314-1329D44FBFC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF033579-B728-4148-8314-1329D44FBFC4}.Debug|x64.ActiveCfg = Debug|x64
+		{BF033579-B728-4148-8314-1329D44FBFC4}.Debug|x64.Build.0 = Debug|x64
+		{BF033579-B728-4148-8314-1329D44FBFC4}.Debug|x86.ActiveCfg = Debug|Win32
+		{BF033579-B728-4148-8314-1329D44FBFC4}.Debug|x86.Build.0 = Debug|Win32
+		{BF033579-B728-4148-8314-1329D44FBFC4}.Release|x64.ActiveCfg = Release|x64
+		{BF033579-B728-4148-8314-1329D44FBFC4}.Release|x64.Build.0 = Release|x64
+		{BF033579-B728-4148-8314-1329D44FBFC4}.Release|x86.ActiveCfg = Release|Win32
+		{BF033579-B728-4148-8314-1329D44FBFC4}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10D092C2-4B0A-4A2E-AE5C-B87A742C5C69}
+	EndGlobalSection
+EndGlobal
