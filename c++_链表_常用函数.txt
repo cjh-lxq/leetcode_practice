@@ -1,10 +1,10 @@
-链节声明
+//链节声明
 struct ListNode {
 	int val;
 	ListNode *next;
 	ListNode(int x) : val(x), next(NULL) {}
 };
-反转链表
+//反转链表
 ListNode* recerse_nodelist(ListNode* head)
 {
 	//链表反转函数
@@ -19,8 +19,8 @@ ListNode* recerse_nodelist(ListNode* head)
 	return p;
 }
 
-生成链表1
-ListNode* create_linklist(int length)
+//生成链表1
+ListNode* create_linklist_bylength(int length)
 {
 	//生成链节
 	vector<ListNode> listlink_vector;
@@ -34,7 +34,7 @@ ListNode* create_linklist(int length)
 	}
 	return head;
 }
-生成链表2
+//生成链表2
 ListNode* create_linklist(vector<int> vec)
 {
 	ListNode* head = new ListNode(vec[0]);
@@ -48,7 +48,7 @@ ListNode* create_linklist(vector<int> vec)
 	}
 	return head;
 }
-删除链表
+//删除链表
 void del_listlink(ListNode* head)
 {
 	//删除链节
@@ -64,7 +64,7 @@ void del_listlink(ListNode* head)
 	cout << num_node << " listnode is deleted" << endl;
 }
 
-打印链表
+//打印链表
 void print_linklist(ListNode* l1)
 {
 	while (l1)
