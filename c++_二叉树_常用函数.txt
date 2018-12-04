@@ -142,6 +142,48 @@ int maxDepth(TreeNode* root)
 	res = 1+max(maxDepth(root->left), maxDepth(root->right));
 	return res;
 }
+//二叉树的层序遍历，返回二维数组
+vector<vector<Element_type>> levelOrderBottom(TreeNode* root)
+{
+	//先将根节点加入第一层列表，然后将其左右节点分别加入第二层列表，再迭代上述过程。
+	vector<Element_type> col_val_vec0, col_val_vec1;
+	vector<TreeNode*> col_node_vec0, col_node_vec1;
+	vector<vector<Element_type>> res_val;
+	vector<vector<TreeNode*>> res_node;
+	if (!root) return res_val;
+	col_val_vec0.push_back(root->val);
+	col_node_vec0.push_back(root);
+	res_node.push_back(col_node_vec0);
+	res_val.push_back(col_val_vec0);
+	while (!col_node_vec0.empty())
+	{
+		for (int i = 0; i < col_node_vec0.size(); i++)
+		{
+			if (col_node_vec0[i]->left)
+			{
+				col_node_vec1.push_back(col_node_vec0[i]->left);
+				col_val_vec1.push_back(col_node_vec0[i]->left->val);
+			}
+			if (col_node_vec0[i]->right)
+			{
+				col_node_vec1.push_back(col_node_vec0[i]->right);
+				col_val_vec1.push_back(col_node_vec0[i]->right->val);
+			}
+		}
+		col_node_vec0.clear();
+		col_val_vec0.clear();
+		col_node_vec0 = col_node_vec1;
+		col_val_vec0 = col_val_vec1;
+		col_node_vec1.clear();
+		col_val_vec1.clear();
+		if (!col_node_vec0.empty())
+		{
+			res_node.push_back(col_node_vec0);
+			res_val.push_back(col_val_vec0);
+		}
+	}
+	return res_val;
+}
 //按照层打印二叉树
 void print_tree(TreeNode* head)
 {
