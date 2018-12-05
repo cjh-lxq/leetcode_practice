@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "111_二叉树的最小深度", "111_二叉树的最小深度.vcxproj", "{4DC92392-913E-4213-894D-124D3BC7D4BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DC92392-913E-4213-894D-124D3BC7D4BF}.Debug|x64.ActiveCfg = Debug|x64
+		{4DC92392-913E-4213-894D-124D3BC7D4BF}.Debug|x64.Build.0 = Debug|x64
+		{4DC92392-913E-4213-894D-124D3BC7D4BF}.Debug|x86.ActiveCfg = Debug|Win32
+		{4DC92392-913E-4213-894D-124D3BC7D4BF}.Debug|x86.Build.0 = Debug|Win32
+		{4DC92392-913E-4213-894D-124D3BC7D4BF}.Release|x64.ActiveCfg = Release|x64
+		{4DC92392-913E-4213-894D-124D3BC7D4BF}.Release|x64.Build.0 = Release|x64
+		{4DC92392-913E-4213-894D-124D3BC7D4BF}.Release|x86.ActiveCfg = Release|Win32
+		{4DC92392-913E-4213-894D-124D3BC7D4BF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {352EDEC0-654B-4E22-8E9E-9DE7A76AF58A}
+	EndGlobalSection
+EndGlobal
