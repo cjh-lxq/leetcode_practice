@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "122_买卖股票的最佳时机II", "122_买卖股票的最佳时机II.vcxproj", "{1B131A68-64E9-4956-BC23-A63CD769450A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B131A68-64E9-4956-BC23-A63CD769450A}.Debug|x64.ActiveCfg = Debug|x64
+		{1B131A68-64E9-4956-BC23-A63CD769450A}.Debug|x64.Build.0 = Debug|x64
+		{1B131A68-64E9-4956-BC23-A63CD769450A}.Debug|x86.ActiveCfg = Debug|Win32
+		{1B131A68-64E9-4956-BC23-A63CD769450A}.Debug|x86.Build.0 = Debug|Win32
+		{1B131A68-64E9-4956-BC23-A63CD769450A}.Release|x64.ActiveCfg = Release|x64
+		{1B131A68-64E9-4956-BC23-A63CD769450A}.Release|x64.Build.0 = Release|x64
+		{1B131A68-64E9-4956-BC23-A63CD769450A}.Release|x86.ActiveCfg = Release|Win32
+		{1B131A68-64E9-4956-BC23-A63CD769450A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65E1C81B-28CB-45B5-B603-0C565F7B29A1}
+	EndGlobalSection
+EndGlobal
