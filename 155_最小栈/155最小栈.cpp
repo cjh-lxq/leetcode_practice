@@ -1,52 +1,41 @@
 ﻿// 155最小栈.cpp: 定义控制台应用程序的入口点。
-//
+// 2018-12-8
 
 #include "stdafx.h"
 #include <vector>
 #include <iostream>
 #include <unordered_map>
 #include <algorithm>
+#include <stack>
 using namespace std;
-class MinStack
-{
+//这道最小栈跟原来的栈相比就是多了一个功能，可以返回该栈的最小值。使用两个栈来实现，一个栈来按顺序存储push进来的数据，另一个用来存出现过的最小值。代码如下:
+class MinStack {
 public:
-	/** initialize your data structure here. */
-	vector<int> stark_vec;
-	unordered_map<int, int> stark_map;
-	int min_num, pop_num;
-	MinStack()
+	MinStack() { }
+	void push(int x) 
 	{
-		min_num = 99999999999;
-	}
-	void push(int x)
-	{
-		stark_vec.push_back(x);
-		if (stark_map.find(x) == stark_map.end() || stark_map[x] == 0) stark_map[x] = 1;
-		else stark_map[x] += 1;
-		if (min_num > x)
-			min_num = x;
+
 	}
 
-	void pop()
+	void pop() 
 	{
-		pop_num = *(stark_vec.end() - 1);
-		stark_vec.erase(stark_vec.end() - 1);
-		stark_map[pop_num] -= 1;
-		if (stark_map[pop_num] == 0) min_num = *(min_element(stark_vec.begin(), stark_vec.end()));
+
 	}
 
-	int top()
+	int top() 
 	{
-		return *(stark_vec.end() - 1);
+
 	}
 
-	int getMin()
+	int getMin() 
 	{
-		return min_num;
+
 	}
+private:
+	stack<int> s1, s2;
 };
 
-int main()
+void test1()
 {
 	MinStack s;
 	s.push(-2);
@@ -56,6 +45,33 @@ int main()
 	s.pop();
 	cout << s.top() << endl;
 	cout << s.getMin() << endl;
+}
+void test2()
+{
+	//["MinStack", "push", "push", "push", "top", "pop", "getMin", "pop", "getMin", "pop", "push", "top", "getMin", "push", "top", "getMin", "pop", "getMin"]
+	//[[], [2147483646], [2147483646], [2147483647], [], [], [], [], [], [], [2147483647], [], [], [-2147483648], [], [], [], []]
+	MinStack s;
+	s.push(2147483646);
+	s.push(2147483646);
+	s.push(2147483647);
+	cout << s.top() << endl;
+	s.pop();
+	cout << s.getMin() << endl;
+	s.pop();
+	cout << s.getMin() << endl;
+	s.pop();
+	s.push(2147483647);
+	cout << s.top() << endl;
+	cout << s.getMin() << endl;
+	s.push(-2147483648);
+	cout << s.top() << endl;
+	cout << s.getMin() << endl;
+	s.pop();
+	cout << s.getMin() << endl;
+}
+int main()
+{
+	test2();
 	system("pause");
 	return 0;
 }
