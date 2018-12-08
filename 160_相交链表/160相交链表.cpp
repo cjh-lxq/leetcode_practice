@@ -101,7 +101,7 @@ void print_linklist(ListNode* l1)
 	}
 	cout << endl;
 }
-
+//判断两链表是否相交
 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
 {
 
