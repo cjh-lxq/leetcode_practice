@@ -14,25 +14,27 @@ public:
 	MinStack() { }
 	void push(int x) 
 	{
-
+		if (stack_min.empty() || x <= stack_min.top()) stack_min.push(x);
+		stark_num.push(x);
 	}
 
 	void pop() 
 	{
-
+		if (stack_min.top() == stark_num.top()) stack_min.pop();
+		stark_num.pop();
 	}
 
 	int top() 
 	{
-
+		return stark_num.top();
 	}
 
 	int getMin() 
 	{
-
+		return stack_min.top();
 	}
 private:
-	stack<int> s1, s2;
+	stack<long long> stark_num, stack_min;
 };
 
 void test1()
