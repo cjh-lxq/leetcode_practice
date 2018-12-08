@@ -90,7 +90,6 @@ void del_listlink(ListNode* head)
 	}
 	cout << num_node << " listnode is deleted" << endl;
 }
-
 //打印链表
 void print_linklist(ListNode* l1)
 {
@@ -102,6 +101,7 @@ void print_linklist(ListNode* l1)
 	}
 	cout << endl;
 }
+
 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
 {
 
