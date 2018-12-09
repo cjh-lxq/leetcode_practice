@@ -1,4 +1,9 @@
+@echo off
 set filename=%date:~0,4%-%date:~5,2%-%date:~8,2%-%time:~0,2%:%time:~3,2%:%time:~6,2%
+if %time:~0,2% LSS 10 (
+set filename=%date:~0,4%-%date:~5,2%-%date:~8,2%-%time:~1,2%%time:~3,2%:%time:~6,2%
+)
+echo.
 echo %filename%
 git remote -v
 git add -A
