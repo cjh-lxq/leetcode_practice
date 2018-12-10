@@ -24,6 +24,8 @@
 #include "stdafx.h"
 #include <vector>
 #include <iostream>
+#include <unordered_map>
+#include <unordered_set>
 using namespace std;
 //链节声明
 struct ListNode {
@@ -104,10 +106,35 @@ void print_linklist(ListNode* l1)
 //判断两链表是否相交
 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
 {
-
+	unordered_set<ListNode*> linklist1_node_set;
+	while (headA != NULL)
+	{
+		linklist1_node_set.emplace(headA);
+		headA = headA->next;
+	}
+	while (headB != NULL)
+	{
+		if (linklist1_node_set.find(headB) != linklist1_node_set.end())
+			return headB;
+		headB = headB->next;
+	}
+	return NULL;
 }
 int main()
 {
-    return 0;
+	ListNode* a_head = create_linklist({ 4,5,6 });
+	ListNode* b_head = create_linklist({ 7,4,5,9,2,8 });
+	ListNode* c_head = create_linklist({ 1,2,3 });
+	//创建相交点
+	ListNode* c_end = c_head;
+	ListNode* b_mid = b_head;
+	for (; c_end->next != NULL; c_end = c_end->next);
+	for (; b_mid->val != 2; b_mid = b_mid->next);
+	c_end->next = b_mid;
+	getIntersectionNode(a_head, b_head);
+	getIntersectionNode(b_head, c_head);
+	del_listlink(a_head);
+	del_listlink(b_head);
+	del_listlink(c_head);
 }
 
