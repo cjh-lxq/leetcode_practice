@@ -21,6 +21,8 @@ git checkout [branch]
 git branch -d [branch]
 删除远程分支(原理是推送一个空分支到云端)
 git push [url_name] :[branch]
+合并分支(从输入的[branch]分支中合并到当前分支，顺序不要搞反)
+git merge [branch]
 
 推送分支到远程托管服务器上
 git push [name] [branch]
